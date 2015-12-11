@@ -1,0 +1,10 @@
+while true
+do
+sleep 10m
+echo 'message:Blink your eyes' | zenity --notification --listen
+for i in `seq 1 5` ;
+do 
+pacmd play-file /usr/share/sounds/KDE-Sys-App-Positive.ogg 0 > /dev/null  
+sleep 1
+done
+done
